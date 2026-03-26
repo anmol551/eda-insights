@@ -3,9 +3,9 @@ import nbformat
 import base64
 import io
 from PIL import Image
+from openai import OpenAI
 
-
-client = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.title("Notebook Plot Insight Generator")
 
