@@ -5,7 +5,7 @@ import io
 from PIL import Image
 from openai import OpenAI
 
-client = st.secrets["OPENAI_API_KEY"]#OpenAI(api_key="")
+client = OpenAI(api_key="")
 
 st.title("Notebook Plot Insight Generator")
 
